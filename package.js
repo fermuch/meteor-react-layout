@@ -22,7 +22,7 @@ Package.onTest(function(api) {
 });
 
 function configure(api) {
-  api.use('react');
+  api.use('react@15.0.1');
   api.use('kadira:flow-router-ssr@3.4.0', ['client', 'server'], {weak: true});
   // We don't browserify, but this version fix a huge build time
   // delay, which exists in the react package.
