@@ -1,7 +1,7 @@
 Package.describe({
   name: 'fermuch:react-layout',
   summary: 'Layout Manager for React with SSR Support (forked)',
-  version: '1.6.0',
+  version: '1.6.1',
   git: 'https://github.com/kadirahq/meteor-react-layout.git'
 });
 
@@ -22,7 +22,7 @@ Package.onTest(function(api) {
 });
 
 function configure(api) {
-  api.use('react@0.14.3');
+  api.use('react');
   api.use('kadira:flow-router-ssr@3.4.0', ['client', 'server'], {weak: true});
   // We don't browserify, but this version fix a huge build time
   // delay, which exists in the react package.
